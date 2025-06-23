@@ -146,6 +146,43 @@
             margin-top: 1.5rem;
             font-style: italic;
         }
+
+        /* Header Specific Styles for Logo */
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            text-align: left; /* Align text content to left */
+        }
+
+        .header-text {
+            flex-grow: 1; /* Allow text to take available space */
+            max-width: calc(100% - 100px); /* Adjust max-width to leave space for logo */
+        }
+
+        .header-logo {
+            flex-shrink: 0; /* Prevent logo from shrinking */
+            width: 80px; /* Adjust logo width */
+            height: auto;
+            margin-left: 20px; /* Space between text and logo */
+            /* Removed border-radius for square shape */
+        }
+
+        @media (max-width: 640px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header-text {
+                max-width: 100%;
+                margin-bottom: 1rem;
+            }
+            .header-logo {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -154,8 +191,14 @@
 
         <!-- Header -->
         <header class="text-center mb-16">
-            <h1 class="text-3xl md:text-4xl font-bold mb-4" style="color: var(--accent-teal);">โอกาสทองตลาดสกินแคร์ผู้สูงวัย 50+ ✨</h1>
-            <p class="text-2xl max-w-3xl text-left mx-auto" style="color: var(--accent-teal);">Aqua Goal Lab Presented : สร้างแบรนด์ Mass Premium 50+ Product For Lamoon ด้วยนวัตกรรมผสานภูมิปัญญาไทย 🌿</p>
+            <div class="header-content">
+                <div class="header-text">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-4" style="color: var(--accent-teal);">โอกาสทองตลาดสกินแคร์ผู้สูงวัย 50+ ✨</h1>
+                    <p class="text-2xl max-w-3xl" style="color: var(--accent-teal);">Aqua Goal Lab Presented : สร้างแบรนด์ Mass Premium 50+ Product For Lamoon ด้วยนวัตกรรมผสานภูมิปัญญาไทย 🌿</p>
+                </div>
+                <!-- Placeholder Logo Image (now square) -->
+                <img src="./images/LogoAquaGoal.jpeg"class="header-logo shadow-md">
+            </div>
         </header>
 
         <!-- Section 1: The Opportunity -->
@@ -180,7 +223,7 @@
             </div>
             <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200">
                 <h3 class="text-2xl font-semibold text-center mb-4" style="color: var(--text-dark);">กลุ่มผู้บริโภค "พร้อมเปย์" เพื่อผลลัพธ์ที่แท้จริง</h3>
-                <p class="text-left max-w-5xl font-semibold" style="color: var(--accent-teal);">ผู้บริโภควัย 50+ มีกำลังซื้อสูง ให้ความสำคัญกับการดูแลตัวเอง จะยอมจ่ายให้กับผลิตภัณฑ์ที่สามารถแก้ปัญหาได้จริง มีความน่าเชื่อถือ และมีความปลอดภัยจากการใช้ผลิตภัณฑ์</p>
+                <p class="text-left max-w-3xl font-semibold" style="color: var(--accent-teal);">ผู้บริโภควัย 50+ มีกำลังซื้อสูง ให้ความสำคัญกับการดูแลตัวเอง จะยอมจ่ายให้กับผลิตภัณฑ์ที่สามารถแก้ปัญหาได้จริง มีความน่าเชื่อถือ และมีความปลอดภัย</p>
             </div>
         </section>
 
