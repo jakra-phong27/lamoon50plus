@@ -134,8 +134,9 @@
             align-items: center;
         }
         .free-from-concept ul li::before {
-            content: '✔';
-            color: var(--accent-teal);
+            /* Updated: Changed content to ❌ and color to red */
+            content: '❌';
+            color: #D32F2F; /* A distinct red for "wrong" or "free from" */
             margin-right: 0.5rem;
             font-weight: bold;
         }
@@ -197,7 +198,8 @@
                     <p class="text-2xl max-w-3xl" style="color: var(--accent-teal);">Aqua Goal Lab Presented : สร้างแบรนด์ Mass Premium 50+ Product For Lamoon ด้วยนวัตกรรมผสานภูมิปัญญาไทย 🌿</p>
                 </div>
                 <!-- Company Logo Image -->
-                <img src="./images/LogoAquaGoal.jpg" alt="โลโก้ Aqua Goal Lab" class="header-logo shadow-md">
+                <!-- Updated src to ./images/LogoAquaGoal.jpeg -->
+                <img src="./images/LogoAquaGoal.jpg" alt="โลโก้ Aqua Goal Lab" class="header-logo shadow-md" onerror="this.onerror=null; this.src='https://placehold.co/80x80/FF0000/FFFFFF?text=ERROR+LOGO';">
             </div>
         </header>
 
