@@ -320,11 +320,11 @@
         .image-gallery img {
             width: 100%; /* Always take full width of container */
             max-width: 800px; /* Max width for larger screens to prevent excessive stretching */
-            height: auto;
-            aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+            height: auto; /* Allow height to adjust naturally based on aspect ratio */
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            object-fit: cover; /* Ensures image covers the area without distortion */
+            object-fit: contain; /* Ensures entire image is visible, no cropping */
+            background-color: #f0f0f0; /* Add a light background for letterboxing */
         }
 
         @media (max-width: 640px) {
@@ -552,15 +552,15 @@
 
             <!-- Image Gallery -->
             <div class="image-gallery">
-                <img src="./images/productlist.jpg" alt="productlist">
-                <img src="./images/showergel.jpg" alt="showergel">
-                <img src="./images/showergel inter.jpg" alt="showergel inter">
-                <img src="./images/shampoo.jpg" alt="shampoo">
-                <img src="./images/shampoo inter.jpg" alt="shampoo inter">
-                <img src="./images/lotion.jpg" alt="lotion">
-                <img src="./images/lotion inter.jpg" alt="lotion inter">
-                <img src="./images/conditioner.jpg" alt="conditioner">
-                <img src="./images/conditioner inter.jpg" alt="conditioner inter">
+                <img src="./images/productlist.jpg" alt="productlist" onerror="this.onerror=null; this.src='https://placehold.co/800x450/E0F2F7/2E8B57?text=Image+1';">
+                <img src="./images/showergel.jpg" alt="showergel" onerror="this.onerror=null; this.src='https://placehold.co/800x450/E0F2F7/2E8B57?text=Image+2';">
+                <img src="./images/showergel inter.jpg" alt="showergel inter" onerror="this.onerror=null; this.src='https://placehold.co/800x450/E0F2F7/2E8B57?text=Image+3';">
+                <img src="./images/shampoo.jpg" alt="shampoo" onerror="this.onerror=null; this.src='https://placehold.co/800x450/E0F2F7/2E8B57?text=Image+4';">
+                <img src="./images/shampoo inter.jpg" alt="shampoo inter" onerror="this.onerror=null; this.src='https://placehold.co/800x450/E0F2F7/2E8B57?text=Image+5';">
+                <img src="./images/lotion.jpg" alt="lotion" onerror="this.onerror=null; this.src='https://placehold.co/800x450/E0F2F7/2E8B57?text=Image+6';">
+                <img src="./images/lotion inter.jpg" alt="lotion inter" onerror="this.onerror=null; this.src='https://placehold.co/800x450/E0F2F7/2E8B57?text=Image+7';">
+                <img src="./images/conditioner.jpg" alt="conditioner" onerror="this.onerror=null; this.src='https://placehold.co/800x450/E0F2F7/2E8B57?text=Image+8';">
+                <img src="./images/conditioner inter.jpg" alt="conditioner inter" onerror="this.onerror=null; this.src='https://placehold.co/800x450/E0F2F7/2E8B57?text=Image+9';">
             </div>
         </section>
 
