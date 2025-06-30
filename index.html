@@ -308,6 +308,24 @@
             font-size: 1.2rem; /* Desktop: Adjusted from 1.4rem */
         }
 
+        /* Image gallery specific styles */
+        .image-gallery {
+            display: flex;
+            flex-direction: column; /* Stack images vertically */
+            align-items: center; /* Center images horizontally */
+            gap: 1rem; /* Space between images */
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .image-gallery img {
+            width: 100%; /* Always take full width of container */
+            max-width: 800px; /* Max width for larger screens to prevent excessive stretching */
+            height: auto;
+            aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            object-fit: cover; /* Ensures image covers the area without distortion */
+        }
 
         @media (max-width: 640px) {
             .header-content {
@@ -492,8 +510,10 @@
 
         <!-- NEW SECTION: Selection Factors -->
         <section class="mb-20" id="selection-factors">
-            <h2 class="section-title">ปัจจัยในการเลือกผลิตภัณฑ์เครื่องสำอาง สกินแคร์ สำหรับผู้สูงวัย  👴</h2>
-            <p class="text-left max-w-3xl font-semibold" style="color: var(--accent-teal);">การเลือกผลิตภัณฑ์ที่เหมาะสมสำหรับผิวผู้สูงวัยเป็นสิ่งสำคัญ เพื่อให้ได้ผลลัพธ์ที่ดีที่สุดและปลอดภัยต่อผิวที่บอบบางลงตามธรรมชาติ</p>
+            <h2 class="section-title">ปัจจัยในการเลือกผลิตภัณฑ์เครื่องสำอาง สกินแคร์ สำหรับผู้สูงวัย 👵👴</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10" style="color: var(--text-muted);">
+                การเลือกผลิตภัณฑ์ที่เหมาะสมสำหรับผิวผู้สูงวัยเป็นสิ่งสำคัญ เพื่อให้ได้ผลลัพธ์ที่ดีที่สุดและปลอดภัยต่อผิวที่บอบบางลงตามธรรมชาติ
+            </p>
             <div class="grid md:grid-cols-1 lg:grid-cols-1 gap-6">
                 <!-- Factor 1: ความปลอดภัย ไม่ระคายเคือง -->
                 <div class="selection-factor-card">
@@ -526,9 +546,22 @@
                     </div>
                 </div>
             </div>
-            <p class="text-center max-w-2xl mx-auto mt-10 font-semibold text-target-desktop text-target-mobile" style="color: var(--accent-teal);">
+            <p class="text-center max-w-3xl mx-auto mt-10 font-semibold text-target-desktop text-target-mobile" style="color: var(--accent-teal);">
                 ด้วยความเข้าใจในปัจจัยสำคัญเหล่านี้ Aqua Goal Lab จึงได้พัฒนาและนำเสนอผลิตภัณฑ์ ที่ตอบโจทย์ทุกความต้องการของผิวผู้สูงวัยได้อย่างครบวงจร
             </p>
+
+            <!-- Image Gallery -->
+            <div class="image-gallery">
+                <img src="./images/productlist.jpg" alt="productlist">
+                <img src="./images/showergel.jpg" alt="showergel">
+                <img src="./images/showergel inter.jpg" alt="showergel inter">
+                <img src="./images/shampoo.jpg" alt="shampoo">
+                <img src="./images/shampoo inter.jpg" alt="shampoo inter">
+                <img src="./images/lotion.jpg" alt="lotion">
+                <img src="./images/lotion inter.jpg" alt="lotion inter">
+                <img src="./images/conditioner.jpg" alt="conditioner">
+                <img src="./images/conditioner inter.jpg" alt="conditioner inter">
+            </div>
         </section>
 
 
@@ -923,7 +956,7 @@
         <!-- Footer / CTA -->
         <footer class="text-center pt-10 border-t border-gray-200">
              <h2 style="color: var(--text-muted);">การตลาดวางแผนดี Packaging สวยงามน่าใช้ แต่ถ้าตัวสินค้าเมื่อนำไปใช้ แล้วไม่ได้ตามสรรพคุณ ก็ไม่อาจทำให้แบรนด์ติดตลาดได้  เรา Aqua Goal Lab ผู้เชี่ยวชาญด้านการสร้างแบรนด์เครื่องสำอางและรับผลิต (OEM) ที่มั่นใจได้ในเรื่องสูตร และสรรพคุณของสินค้า ตามความต้องการของเจ้าของแบรนด์</h2>
-             <p class="text-2xl text-center max-w-3xl mx-auto mb-12" style="color: var(--accent-teal);">ขอขอบคุณทาง <span class="text-accent-gold">Lamoon</span> ที่ให้โอกาสกับทาง Aqua Goal Lab นำเสนอ Project นี้</p>
+             <p class="text-2xl text-center max-w-3xl mx-auto mb-12" style="color: var(--accent-teal);">ขอขอบคุณทาง <span class="text-accent-gold">Lamoon Evera</span> ที่ให้โอกาสกับทาง Aqua Goal Lab นำเสนอ Project นี้</p>
              <a href="https://www.aquagoallab.com/" target="_blank" class="inline-block bg-teal-600 text-white font-bold text-lg px-8 py-4 rounded-lg shadow-md hover:bg-teal-700 transition-colors" style="background-color: var(--accent-teal);">contact us / more information click</a>
              <p class="text-sm mt-12" style="color: var(--text-muted);">&copy2025 by Aqua Goal Lab. All Rights Reserved.</p>
         </footer>
